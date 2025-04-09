@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sing Up | Log In</title>
+    <!--styles link-->
+    <link rel="stylesheet" href="signinup.css">
+    <!--box icons-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="container" id="container">
+        <div class="form-container sign-up">
+            <form action="registrationsignup.php" method="post">
+                <h1>Create Account</h1>
+                <div class="social-icons">
+                    <a href="#" class="icon">
+                        <i class="bx bxl-google"></i>
+                    </a>
+                    <a href="#" class="icon">
+                        <i class="bx bxl-facebook"></i>
+                    </a>
+                    <a href="#" class="icon">
+                        <i class="bx bxl-twitter"></i>
+                    </a>
+                    <a href="#" class="icon">
+                        <i class="bx bxl-instagram"></i>
+                    </a>
+                </div>
+                <span>use email instead</span>
+                <input type="text" name="username" id="" placeholder="Username">
+                <input type="email" name="email" id="" placeholder="Email">
+                <input type="password" name="password" id="" placeholder="Password">
+                <button name="submit">Sign Up</button>
+            </form>
+        </div>
+
+        <div class="form-container sign-in">
+            <form action="registrationsignin.php" method="post">
+                <h1>Sign In</h1>
+                <div class="social-icons">
+                    <a href="#" class="icon">
+                        <i class="bx bxl-google"></i>
+                    </a>
+                    <a href="#" class="icon">
+                        <i class="bx bxl-facebook"></i>
+                    </a>
+                    <a href="#" class="icon">
+                        <i class="bx bxl-twitter"></i>
+                    </a>
+                    <a href="#" class="icon">
+                        <i class="bx bxl-instagram"></i>
+                    </a>
+                </div>
+                <span>sign in with google accounts</span>
+                <input type="text" name="usernamee" id="" placeholder="Username">
+                <input type="password" name="passwordd" id="" placeholder="Password">
+                <a href="#">Forget Password</a>
+                <button name="submit2">Sign In</button>
+            </form>
+        </div>
+
+        <div class="toggle-container">
+            <div class="toggle">
+                <div class="toggle-panel toggle-left">
+                    <h1>Welcome Back!</h1>
+                    <p>Your details to experience all of site features</p>
+                    <button class="hidden" id="login">Sign In</button>
+                </div>
+                <div class="toggle-panel toggle-right">
+                    <h1>Hello Friend!</h1>
+                    <p>Register to experience all of site features</p>
+                    <button class="hidden" id="register">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="signinup.js"></script>
+</body>
+</html>
